@@ -1,0 +1,118 @@
+body{
+	--colorFondo: pink;
+	--colorFormu: white;
+	--ancho: 56%;
+	font-family: 'Architects Daughter';
+	background-color: #1a0321;
+	margin: 20px;
+}
+
+#finalizado{
+	display:none;
+}
+
+.button{
+	display: inline-block;
+	padding: 30px 50px;
+	color: white;
+	font-size:20px;
+	transition:0.2s;
+}
+
+
+.button:hover{
+	background-color: #a945c7;
+	box-shadow: 0 0 0px #a945c7,
+				0 0 0px #a945c7,
+				0 0 0px #a945c7;
+
+	list-style-type: none !important;
+}
+
+.buton span{
+	list-style-type: none !important;
+}
+
+.error {
+	display: none;
+	color: red;
+	width: 100%;
+	text-align: center;
+	margin-top: .7em;
+	font-size: .8rem;
+  }
+
+#span{
+	background-color: linear-
+	gradient(98deg,transparent,#a945c7);
+}
+
+
+label{
+	width: 120px;
+	display: inline-block;
+}
+
+
+.orden label{
+	width: auto !important;
+	list-style-type: none;
+}
+
+.orden input{
+	width: auto !important;
+	list-style-type: none;
+}
+
+
+
+input,select{
+	width: 50%;
+	height: 20px;
+	border:1px solid red;
+	margin:3px;
+	list-style-type: none;
+
+}
+
+textarea{
+	width:50%;
+	height:5em;
+	list-style-type: none;
+}
+
+
+
+
+#slider{
+	width: 50%;
+	height: 7px;
+	outline: none;
+	border-radius: 3px;
+	-webkit-appearance:none;
+	background-color: pink;
+	box-shadow: inset 0 3px 18px rgba(0,0,0,0.6);
+	outline: none;
+	list-style-type: none;
+
+}
+
+#slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	border-radius: 50%;
+	cursor:pointer;
+	outline: none;
+}
+
+#slider::-webkit-slider-thumb:hover{
+	box-shadow: 0 0 0 3px white,
+				0 0 0 5px blue;
+}
+
+#slider:active::-webkit-slider-thumb{
+	box-shadow: 0 0 0 3px white,
+				0 0 0 6px blue;
+}

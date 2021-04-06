@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body class="button">
+	<span id="finalizado"></span>
+	<form class="form" id="form">
+		<fieldset>
+			<legend>Formulario</legend>
+		<span id='mensaje'></span>	
+		<ul>
+			<li>
+				<label for="nombre">Nombres</label>
+				<input name="nombre" type="string" placeholder="Nombres" required="true" />
+			</li>
+			<li>
+				<label for="nombre">Apellidos</label>
+				<input name="nombre" type="string" placeholder="Apellidos" required="true"/>
+			</li>
+			<li>
+				<label for="rut">RUT</label>
+				<input id="rut" name="rut" type="string" placeholder="RUT" required="true"/>
+			</li>
+			<span id="error-rut" class="error"></span>
+			<li>
+				<label for="correo">Correo Electrónico</label>
+				<input name="correo" type="email" placeholder="Correo Electrónico" required="true"/>
+			</li>
+			<li>
+				<label for="telefono">Telefono</label>
+				<input id="telefono" name="telefono" type="number" placeholder="Telefono móvil" required="true">
+			</li>
+			<span id="error-telefono" class="error"></span>
+			<li class="lenguaje">
+				<!-- <div id ="button"></div> -->
+					<p>Selecciona uno o más lenguajes de programación de su interés</p>
+					<input type="checkbox" name="lenguaje" id="miID" value="Phyton">Phyton
+					<br>
+					<input type="checkbox" name="lenguaje" id="miID2" value="Java">Java
+					<br>
+					<input type="checkbox" name="lenguaje" id="miID3" value="Typescript">Typescript
+					<br>
+					<input type="checkbox" name="lenguaje" id="miID4" value="PHP">PHP
+					<br>
+					<input type="checkbox" name="lenguaje" id="miID5" value="C#">C#
+					<br>
+					<input type="checkbox" name="lenguaje" id="miID6" value="C++">C++
+					<br>
+			
+			</li>
+			<span id="error-lenguaje" class="error"></span>
+			<li> 
+				<div class="box">
+					<center><div id="value"></div></center>
+					<p>¿Cuál es su conocimiento en programación?</p>
+				</div>
+				<div class="box">
+					<input type="range" min="0" max="100" value="50" id="slider" required="true">
+				</div>
+			</li>
+
+
+			<li class="orden" >
+				<label class="label">Experiencia Laboral</label>
+				<div class="radio">
+				<input type="radio" value="1" id="año1" name="años" required="true">
+				<label for="1">1.año</label>
+
+				<input type="radio" value="2" id="año2" name="años">
+				<label for="2">2.años</label>
+
+				<input type="radio" value="3" id="año3" name="años">
+				<label for="3">3.años</label>
+
+				<input type="radio" value="4" id="año4" name="años">
+				<label for="4">4.años</label>
+
+				<input type="radio" value="5" id="año5" name="años">
+				<label for="5">5.años o más</label>
+			</div>
+			</li>
+			<li>
+				<label for="descripcion">Descripción breve de usted:</label>
+				<textarea id="descripcion" required="true" maxlength="300"></textarea>
+			</li>
+		</ul>
+		<!-- <div class="button">
+				<input type='submit' name="enviar"></input>
+				<input type='reset' name="limpiar"></input>
+			</div> -->
+
+			<button type="submit" id="enviar" class="btn">Enviar Información</button>
+			<button type="click" id="limpiar" class="btn">Limpiar Datos</button>
+		</fieldset>
+	
+	</form>
+</body>
+</html>
